@@ -1,0 +1,19 @@
+:root{
+    /*Background color*/
+    --bg-1: #404258;
+    --bg-2: #474E68;
+    --bg-3: #50577A;
+    --bg-4: #6B728E;
+
+    /*Themes*/
+    --theme-1: #002B5B;
+    --theme-2: #2B4865;
+    --theme-3: #256D85;
+    --theme-4: #8FE3CF;
+}   
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+    box-sizing: border-box;
+}
