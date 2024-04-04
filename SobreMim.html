@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../global.css">
+</head>
+<body id="root">
+    
+</body>
+
+<script>
+const root = document.getElementById('root');
+const listaCores = ['red', 'blue','pink', 'yellow', 'green','white', 'cyan', 'purple','orange', 'black']
+var i = 0
+
+setInterval(()=> {
+    // nosso script
+    root.style.background = listaCores[i];
+
+    i++
+    if(i > listaCores.length)(i = 0)
+},)
+
+
+</script>
+</html>

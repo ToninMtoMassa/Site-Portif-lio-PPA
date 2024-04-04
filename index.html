@@ -11,14 +11,17 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="app">
+    <div class="app" id="bg-container">
         <header>
             <h1 class="logo">
                 ToninMtoMassa
             </h1>
+            <button onclick="DarkMode()">
+                DK
+            </button>
             <ul class="link-list align-left">
                 <li>
-                    <a href="#" class = "link">Sobre mim</a>
+                    <a href=".\SobreMim.html" class = "link">Sobre mim</a>
                 </li>
                 <li>
                     <a href="#" class = "link">Trabalhos</a>
@@ -32,7 +35,7 @@
             </ul>
         </header>
         <main>
-            <img src="C:\Users\Administrador\Documents\porrafolio\images\IMG_20240216_170353-removebg.png" alt="" class="main-image">
+            <img src=".\images\IMG_20240216_170353-removebg.png" alt="" class="main-image">
             <div class="info">       
                 <h1 class="title">
                     <span>
@@ -61,4 +64,28 @@
         </footer>
     </div>
 </body>
+
+<script>
+
+var flag = false;
+
+function DarkMode(){
+    const bg = document.getElementById('bg-container')
+    if (flag) {
+        bg.style.background = '#50577A'; //cor clara
+        bg.style.boxShadow = 'inset 0 0 40px var(--bg-1)';
+        flag = false;
+    } else {
+        bg.style.background = '#1e1e1e'; //cor escura  
+        bg.style.boxShadow = 'none';
+        flag = true;
+    }
+
+
+
+
+}
+
+</script>
+
 </html>
